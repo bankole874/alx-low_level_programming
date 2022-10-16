@@ -2,14 +2,14 @@
 /**
  * main - Numbers
  *
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	int c;
 
-	for (c = 0; c <= 10; c++)
+	for (c = 0; c < 10; c++)
 	{
 		printf("%d", c);
 	}
