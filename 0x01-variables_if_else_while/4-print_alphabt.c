@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *main - print alphabt
+ * main - print alphabt
  *
- *return: Always 0 (Success)
+ * return: Always 0 (Success)
  **/
 
 int main(void)
