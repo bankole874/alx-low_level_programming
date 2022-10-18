@@ -3,10 +3,10 @@
 /**
  * main - print_comb5
  *
- *  Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
 	int a;
 	int b;
@@ -39,6 +39,7 @@ int main()
 			}
 		}
 	}
-	return(0);
+	putchar('\n');
+	return (0);
 }
 
