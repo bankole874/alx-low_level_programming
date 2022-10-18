@@ -23,12 +23,12 @@ int main(void)
 				{
 					if (a + b < c + d && a <= c && b <= d)
 					{
-						putchar(a);
-						putchar(b);
-						putchar(' ');
-						putchar(c);
-						putchar(d);
-						if (a == 57 && b == 56 && c == 57 && d == 57)
+					putchar(a);
+					putchar(b);
+					putchar(' ');
+					putchar(c);
+					putchar(d);
+					if (a == 57 && b == 56 && c == 57 && d == 57)
 						{
 						break;
 						}
