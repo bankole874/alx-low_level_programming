@@ -19,7 +19,5 @@ void print_alphabet_x10(void)
 		b++;
 	}
 	while (b < 10);
-
-	return (0);
 }
 	
