@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * printx10 - 10 x alphabets
+ * print_alphabet_x10 - 10 x alphabets
  */
 
 void print_alphabet_x10(void)
 {
 	int a;
 	int b;
+
 	b = 0;
 
 	do {
