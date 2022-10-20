@@ -19,5 +19,4 @@ int print_last_digit(int l)
 		_putchar(-l + 48);
 		return(-l);
 	}
-	return (0);
 }
