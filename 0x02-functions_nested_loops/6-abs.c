@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * _abs - computes the absolute of an integer.
+ * a - computes the absolute of an integer.
  *
  * @int: the character
  * Return: Always 0 (Success)
  */
 
-int _abs(int t)
+int _abs(int a)
 {
-	if (t < 0)
+	if (a < 0)
 	{
 		return (-t);
 	}
-	else if (t > 0)
+	else if (a > 0)
 	{
-		return (t);
+		return (a);
 	}
 	else
 		return (0);
