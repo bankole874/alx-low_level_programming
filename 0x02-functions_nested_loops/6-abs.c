@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * a - computes the absolute of an integer.
+ * _abs - computes the absolute of an integer.
  *
- * @int: the character
+ * @a: the character
  * Return: Always 0 (Success)
  */
 
@@ -11,7 +11,7 @@ int _abs(int a)
 {
 	if (a < 0)
 	{
-		return (-t);
+		return (-a);
 	}
 	else if (a > 0)
 	{
