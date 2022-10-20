@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *
+ * Jack_bauer - print time
  *
  *
  */
@@ -25,20 +25,19 @@ void jack_bauer(void)
 					{
 					_putchar(a);
 					_putchar(b);
-					_putchar(':');
+					_putchar(58);
 					_putchar(c);
 					_putchar(d);
 					if (a == 50 && b == 51 && c == 53 && d == 57)
 					{
 						break;
 					}
-					putchar(',');
-					putchar(' ');
+					_putchar(',');
+					_putchar(' ');
 					}
 				}
 			}
 		}
 	}
 	putchar('\n');
-	return (0);
 }
