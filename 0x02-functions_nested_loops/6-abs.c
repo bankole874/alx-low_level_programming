@@ -7,15 +7,15 @@
  * Return: Always 0 (Success)
  */
 
-int _abs(int)
+int _abs(int r)
 {
-	if (int < 0)
+	if (r < 0)
 	{
-		return (int * (-1));
+		return (r * (-1));
 	}
-	else if (int > 0)
+	else if (r > 0)
 	{
-		return (int);
+		return (r);
 	}
 	else
 		return (0);
