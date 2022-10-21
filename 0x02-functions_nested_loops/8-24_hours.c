@@ -28,12 +28,6 @@ void jack_bauer(void)
 					_putchar(58);
 					_putchar(c);
 					_putchar(d);
-					if (a == 50 && b == 51 && c == 53 && d == 57)
-					{
-						break;
-					}
-					_putchar(',');
-					_putchar(' ');
 					_putchar('\n');
 					}
 				}
