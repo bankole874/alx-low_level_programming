@@ -16,14 +16,23 @@ void print_to_98(int n)
 	{
 		for (c = n; c <= 98; c++)
 		{
-			printf("%d\n", c);
+			printf("%d", c);
+			if (c != 98)
+			{
+				printf(", ");
+			}
 		}
 	}
 	else
 	{
 		for (d = n; d >= 98; d--)
 		{
-			printf("%d\n", d);
+			printf("%d", d);
+			if (d != 98)
+			{
+				printf(". ");
+			}
 		}
 	}
+	putchar('\n');
 }
