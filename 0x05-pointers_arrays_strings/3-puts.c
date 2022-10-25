@@ -15,10 +15,10 @@ void _puts(char *str)
 	{
 		if (str[count] == '\0')
 		{
-			putchar('\n');
+			_putchar('\n');
 			break;
 		}
-		putchar(str[count]);
+		_putchar(str[count]);
 		count++;
 	}
 	return (0);
