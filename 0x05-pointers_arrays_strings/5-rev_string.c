@@ -20,4 +20,5 @@ void rev_string(char *s)
 		_putchar(s[count - i]);
 	}
 	_putchar('\n');
+	return (0);
 }
