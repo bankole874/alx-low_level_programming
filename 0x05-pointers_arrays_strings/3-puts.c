@@ -4,7 +4,7 @@
  * _puts - prints a string
  *
  * @str: input character
- * Return: 0 Always(Success)
+ * Return: no
  */
 
 void _puts(char *str)
@@ -21,5 +21,4 @@ void _puts(char *str)
 		_putchar(str[count]);
 		count++;
 	}
-	return (0);
 }
