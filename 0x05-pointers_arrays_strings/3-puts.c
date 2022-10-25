@@ -4,6 +4,7 @@
  * _puts - prints a string
  *
  * @str: input character
+ * Return: 0 Always(Success)
  */
 
 void _puts(char *str)
@@ -14,10 +15,10 @@ void _puts(char *str)
 	{
 		if (str[count] == '\0')
 		{
-			_putchar('\n');
+			putchar('\n');
 			break;
 		}
-		_putchar(str[count]);
+		putchar(str[count]);
 		count++;
 	}
 	return (0);
