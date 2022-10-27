@@ -10,20 +10,17 @@ void rev_string(char *s)
 {
 	int count = 0;
 	int i;
-	int j;
+	char r = s[0];
 
 	while (s[count] != '\0')
 	{
 		count++;
 	}
-	for (j = 0; j <= count; j++)
+	for (i = 0; i < count; i++)
 	{
-		_putchar(s[j]);
+		c--;
+		r = s[i];
+		s[i] = s[count];
+		s[c] = r;
 	}
-	_putchar('\n');
-	for (i = 1; i <= count; i++)
-	{
-		_putchar(s[count - i]);
-	}
-	_putchar('\n');
 }
