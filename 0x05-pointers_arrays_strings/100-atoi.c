@@ -12,8 +12,9 @@
 int _atoi(char *s)
 {
 	int count = 0;
+	int n;
 
-	for (int n = 0; *(s + n) != '\0'; n++)
+	for (n = 0; *(s + n) != '\0'; n++)
 	{
 		count++;
 	}
