@@ -13,13 +13,15 @@ int _atoi(char *s)
 {
 	int count = 0;
 	int n;
+	int convert;
 
 	for (n = 0; *(s + n) != '\0'; n++)
 	{
 		count++;
 	}
-	char i[count + 1];
+
+	char i[count];
 
 	strcpy(i, s);
-	int convert = atoi(i);
+	convert = atoi(i);
 }
