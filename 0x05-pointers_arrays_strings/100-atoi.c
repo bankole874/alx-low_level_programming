@@ -20,7 +20,7 @@ int _atoi(char *s)
 		count++;
 	}
 
-	char i[count];
+	char i[10];
 
 	strcpy(i, s);
 	convert = atoi(i);
