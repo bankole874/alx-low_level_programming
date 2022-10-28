@@ -24,4 +24,6 @@ int _atoi(char *s)
 
 	strcpy(i, s);
 	convert = atoi(i);
+	
+	return (convert);
 }
