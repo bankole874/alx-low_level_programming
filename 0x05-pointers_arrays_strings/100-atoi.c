@@ -11,19 +11,21 @@
 
 int _atoi(char *s)
 {
-	int count = 0;
-	int n;
-	int convert;
+	int sign = 1;
+	unsigned int n = 0;
 
-	for (n = 0; *(s + n) != '\0'; n++)
+	while(!('0' <= *s && *s <= '9') && *s != '\0')
 	{
-		count++;
+		if (*s == '-')
+			sign *= -1;
+		if (*s == '+')
+			sign *= 1;
+		s++;
 	}
-
-	char i[10];
-
-	strcpy(i, s);
-	convert = atoi(i);
-	
-	return (convert);
+	while ('0' <= *s && *s <= '9' && *s != '\0')
+	{
+		n = (n * 10) + (*s - '0');
+		s++;
+	}
+	return (n * sign);
 }
