@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strcat - string concatenation
- * @dest: input caharacter
+ * _strcat - string concatenation,
+ * @dest: destination
  * @src: input character
  * return: return strings or combination of characters
  */
@@ -10,8 +10,8 @@
 char *_strcat(char *dest, char *src)
 {
 	int a = 0, b = 0;
-	
-	while (*(dest + a)!= '\0')
+
+	while (*(dest + a) != '\0')
 	{
 		a++;
 	}
