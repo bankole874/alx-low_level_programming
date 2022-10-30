@@ -23,7 +23,7 @@ int main(void)
 		count = count + random;
 		printf("%c", random);
 	}
-	printf("%c\n", (2772 - c));
+	printf("%c\n", (2772 - count));
 
 	return (0);
 }			
