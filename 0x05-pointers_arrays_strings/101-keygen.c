@@ -13,9 +13,9 @@ int main(void)
 	int random = 0, count = 0;
 
 	srand(time(NULL));
-	while (c < 2772)
+	while (count < 2772)
 	{
-		r = rand % 128;
+		random = rand() % 128;
 		if ((count + random) > 2772)
 		{
 			break;
