@@ -6,7 +6,7 @@
  * Return: strings
  */
 
-char *cap_string(char *s)
+char *leet(char *s)
 {
 	int i, count = 0;
 	int low_letters[] = {97, 101, 111, 116, 108};
