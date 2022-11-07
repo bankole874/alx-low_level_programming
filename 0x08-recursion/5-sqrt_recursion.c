@@ -7,7 +7,12 @@
  * Return: int
  */
 
+/**
+ * power_operation - returns the 
 int power_operation(int n, int c)
+@n: input n
+@c: input c
+Return (int);
 {
 	if (c % (n / c) == 0)
 	{
