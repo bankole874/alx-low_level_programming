@@ -1,14 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns the natural
- * square root of a number
- * @n: input int
- * Return: int
- */
-
-/**
- * power_operation - returns the 
+ * power_operation - returns the
  * int power_operation(int n, int c)
  * @n: input n
  * @c: input c
@@ -26,6 +19,13 @@ int power_operation(int n, int c)
 	}
 	return (0 + power_operation(n, c + 1));
 }
+
+/**
+ * _sqrt_recursion - returns the natural
+ * square root of a number
+ * @n: input int
+ * Return: int
+ */
 
 int _sqrt_recursion(int n)
 {
