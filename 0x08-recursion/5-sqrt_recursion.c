@@ -5,7 +5,7 @@
  * int power_operation(int n, int c)
  * @n: input n
  * @c: input c
- * Return (int);
+ * Return: int;
  */
 
 int power_operation(int n, int c)
