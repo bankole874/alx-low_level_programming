@@ -10,7 +10,7 @@
  * Return: Always (0) Success.
  */
 
-int main (int argc, int *argv[])
+int main (int argc, char *argv[])
 {
 	char *opc = (char *) main;
 
@@ -34,7 +34,7 @@ int main (int argc, int *argv[])
 	{
 		printf("%02x", opc[i] & 0xFF);
 		
-		if (i != nbytes - 1)
+		if (i != (nbytes - 1))
 		{
 			printf(" ");
 		}
