@@ -10,12 +10,12 @@
  * Return: Always (0) Success.
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char *opc = (char *) main;
 
 	int i, nbytes;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
