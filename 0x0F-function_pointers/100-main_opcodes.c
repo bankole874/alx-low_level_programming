@@ -32,7 +32,7 @@ int main (int argc, int *argv[])
 
 	for (i = 0; i < nbytes; i++)
 	{
-		printf("%02x", opc[i] & oxFF);
+		printf("%02x", opc[i] & 0xFF);
 		
 		if (i != nbytes - 1)
 		{
