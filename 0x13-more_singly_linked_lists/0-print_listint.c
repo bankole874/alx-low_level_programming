@@ -23,7 +23,7 @@ size_t print_listint(const listint_t *h)
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <lists.h>
+#include "lists.h"
 
 /**
  *
