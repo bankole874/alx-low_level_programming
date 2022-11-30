@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "lists.h  "
 
 /**
  * delete_nodeint_at_index - a function that deletes
@@ -28,7 +28,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	for (i = 0; i < index; i += 1)
 	{
-		if (nxt == NULL)
+		if (n == NULL)
 			return (-1);
 		p = n;
 		n = n->next;
