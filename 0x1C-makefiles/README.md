@@ -10,6 +10,7 @@ Makefile sets a set of rules to determine which parts of a program need to be re
 - What are explicit and implicit rules
 - What are the most common / useful rules
 - What are variables and how to set and use them.
+
 | Tasks             | Description                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | `0. make -f 0-Makefile` | first Makefile. |
