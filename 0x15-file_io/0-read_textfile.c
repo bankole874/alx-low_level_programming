@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <unistd.h>
 
+/**
+ * read_textfile - a function.
+ * @filename: file name.
+ * @letters: letters number.
+ * Return: number of letters.
+ */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *hfp;
