@@ -39,7 +39,7 @@ int main(int ac, char **av)
 		exit(98);
 	}
 	hread_bytes = read(hfd_from, hbuffer, BUFFER_SIZE);
-	while (hread_bytes != -1)
+	while ((hread_bytes) > 0)
 	{
 		hwrite_bytes = write(hfd_to, hbuffer, hread_bytes);
 		if (hwrite_bytes != hread_bytes)
