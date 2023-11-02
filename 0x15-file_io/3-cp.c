@@ -43,11 +43,11 @@ int main(int ac, char **av)
 		}
 		if (close(hfd_from) == -1)
 		{
-			dprintf(2, "Error: Can't close fd %d\n", hfd_from), exit(100);
+			dprintf(2, "Error: Can't close fd %d\n", hfd_from), return (100);
 		}
 		if (close(hfd_to) == -1)
 		{
-			dprintf(2, "Error: Can't close fd %d\n", hfd_from), exit(100);
+			dprintf(2, "Error: Can't close fd %d\n", hfd_from), return (100);
 		}
 		close(hfd_from);
 		close(hfd_to);
