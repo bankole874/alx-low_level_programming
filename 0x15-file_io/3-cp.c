@@ -26,17 +26,17 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	hfd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0666);
-	if (hfd_to == -1)
-	{
-		dprintf(2, "Error: Can't write to %s\n", av[2]);
-		exit(99);
-	}
 	hfd_from = open(av[1], O_RDONLY);
 	if (hfd_from == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
+	}
+	hfd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	if (hfd_to == -1)
+	{
+		dprintf(2, "Error: Can't write to %s\n", av[2]);
+		exit(99);
 	}
 	hread_bytes = read(hfd_from, hbuffer, BUFFER_SIZE);
 	while ((hread_bytes) > 0)
