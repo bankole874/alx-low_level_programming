@@ -15,9 +15,8 @@
 
 int main(int ac, char **av)
 {
-	int hfd_from, int hfd_to;
-	ssize_t hwrite_bytes;
-	ssize_t hread_bytes;
+	int hfd_from, hfd_to;
+	ssize_t hwrite_bytes, hread_bytes;
 	char hbuffer[BUFFER_SIZE];
 
 	if (ac != 3)
