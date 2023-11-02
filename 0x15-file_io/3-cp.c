@@ -47,9 +47,6 @@ int main(int ac, char **av)
 			dprintf(2, "Error: Can't write fd %s\n", av[2]);
 			exit(99);
 		}
-
-		close(hfd_from);
-		close(hfd_to);
 	}
 	if (close(hfd_from) == -1)
 	{
