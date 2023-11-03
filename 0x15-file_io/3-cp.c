@@ -33,25 +33,25 @@ int main(int ac, char **av)
 	{
 		dprintf(2, "Error: Can't write to %s\n", av[2]), exit(99);
 	}
-	hread_bytes = read(hfd_from, hbuffer, BUFFER_SIZE);
-	while ((hread_bytes) > 0)
+	hread_bytes = 1024;
+	while (hread_bytes == 1024)
 	{
+		hread_bytes = read(hfd_from, hbuffer, BUFFER_SIZE);
+		if (read_bytes == -1)
+			dprintf(STDERR_FILENO, "Error: Can't read file %s\n", av[2]), exit(99);
 		hwrite_bytes = write(hfd_to, hbuffer, hread_bytes);
-		if (hwrite_bytes > hread_bytes)
-		{
+		if (hwrite_bytes == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", av[2]), exit(99);
 		}
-		if (close(hfd_from) == -1)
-		{
-			dprintf(2, "Error: Can't close fd %d\n", hfd_from), exit(100);
-		}
-		if (close(hfd_to) == -1)
-		{
-			dprintf(2, "Error: Can't close fd %d\n", hfd_from), exit(100);
-		}
-		close(hfd_from);
-		close(hfd_to);
-		return (0);
+	close(hfd_from);
+	if (close(hfd_from) == -1)
+	{
+		dprintf(2, "Error: Can't close fd %d\n", hfd_from), exit(100);
 	}
+	if (close(hfd_to) == -1)
+	{
+		dprintf(2, "Error: Can't close fd %d\n", hfd_from), exit(100);
+	}
+	close(hfd_to);
 	return (0);
 }
