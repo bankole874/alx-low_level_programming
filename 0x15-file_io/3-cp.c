@@ -39,7 +39,7 @@ int main(int ac, char **av)
 	{
 		hread_bytes = read(hfd_from, hbuffer, BUFFER_SIZE);
 		if (hread_bytes == -1)
-			dprintf(STDERR_FILENO, "Error: Can't read file %s\n", av[1]), exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 		hwrite_bytes = write(hfd_to, hbuffer, hread_bytes);
 		if (hwrite_bytes == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", av[2]), exit(99);
