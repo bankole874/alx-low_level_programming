@@ -14,7 +14,7 @@
  * Return: 0
  */
 
-int main(int ac, char **av)
+int main(int ac, char *av)
 {
 	int hfd_from, hfd_to;
 	ssize_t hwrite_bytes, hread_bytes;
