@@ -32,7 +32,7 @@ int main(int ac, char **av)
 	hfd_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 0664);
 	if (hfd_to == -1)
 	{
-		dprintf(2, "Error: Can't write to file %s\n", av[2]), exit(99);
+		dprintf(2, "Error: Can't write to %s\n", av[2]), exit(99);
 	}
 	hread_bytes = BUFFER_SIZE;
 	while (hread_bytes == BUFFER_SIZE)
@@ -42,7 +42,7 @@ int main(int ac, char **av)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 		hwrite_bytes = write(hfd_to, hbuffer, hread_bytes);
 		if (hwrite_bytes == -1)
-			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", av[2]), exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	}
 	close(hfd_from);
 	if (close(hfd_from) == -1)
