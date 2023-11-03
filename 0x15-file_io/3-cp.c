@@ -22,7 +22,7 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(2, "%s\n", "Usage: cp file_from file_to"), exit(97);
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to"), exit(97);
 	}
 	hfd_from = open(av[1], O_RDONLY);
 	if (hfd_from == -1)
