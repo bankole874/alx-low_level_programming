@@ -44,15 +44,13 @@ int main(int ac, char **av)
 		if (hwrite_bytes == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	}
-	close(hfd_from);
 	if (close(hfd_from) == -1)
 	{
 		dprintf(2, "Error: Can't close fd %d\n", hfd_from), exit(100);
 	}
-	close(hfd_to);
 	if (close(hfd_to) == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", hfd_to), exit(100);
+		dprintf(2, "Error: Can't close fd %d\n", hfd_from), exit(100);
 	}
 	return (0);
 }
