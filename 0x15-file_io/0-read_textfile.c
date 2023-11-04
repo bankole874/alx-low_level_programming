@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * read_textfile - a function.
