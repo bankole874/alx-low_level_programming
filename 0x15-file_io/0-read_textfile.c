@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <main.h>
 
 /**
  * read_textfile - a function.
@@ -19,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	hfp = fopen(filename, "r");
+	hfp = open(filename, O_RDONLY);
 	if (hfp == NULL)
 	{
 		return (0);
@@ -27,16 +28,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	hbuffer = malloc(letters + 1);
 	if (hbuffer == NULL)
 	{
-		fclose(hfp);
+		close(hfp);
 		return (0);
 	}
-	hbytes_read = fread(hbuffer, 1, letters, hfp);
+	hbytes_read = read(hbuffer, letters, hfp);
 	if (hbytes_read != letters)
 	{
-		fclose(hfp);
+		close(hfp);
 		return (0);
 	}
-	fputs(hbuffer, stdout);
-	fclose(hfp);
+	write(STDOUT_FILENO, hbuffer);
+	close(hfp);
 	return (hbytes_read);
 }
