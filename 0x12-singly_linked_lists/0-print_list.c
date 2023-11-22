@@ -10,7 +10,6 @@
 size_t print_list(const list_t *h)
 {
 int count;
-struct list_s *a;
 
 count = 0;
 
