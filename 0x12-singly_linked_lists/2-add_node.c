@@ -22,15 +22,10 @@ list_t *add_node(list_t **head, const char *str)
     }
 
     temp->str = strdup(str);
-    temp->len = length; // new = "str", 3,
-    temp->next = *head; // new = "str", 3, NULL
+    temp->len = length;
+    temp->next = *head;
 
     *head = temp;
 
     return (temp);
 }
-
-// head =  null, null, 1024
-// second = "Alexandro", sizeof("Alexandro"), 2024
-// third = "Asaia", sizeof("Asaia"), 3024
-// head = {}
