@@ -36,4 +36,5 @@ current = current->next;
 }
 current->next = temp;
 return (temp);
+free(current);
 }
