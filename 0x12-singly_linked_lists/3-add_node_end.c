@@ -13,6 +13,11 @@ list_t *temp = malloc(sizeof(list_t));
 list_t *current = malloc(sizeof(list_t));
 int length = 0;
 
+if (temp == NULL)
+{
+return (NULL);
+}
+
 while (str[length])
 {
 length++;
