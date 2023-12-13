@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
-int winning_numbers[] = {9, 8, 10, 24, 75, 9};
 
-int *get_winning_numbers()
+int printf(const char *format, ...)
 {
-  return winning_numbers;
+	write(1, "9 8 10 24 75 9\n", 17);
+	write(1, "Congratulations, you win the Jackpot!\n", 38);
+	exit(EXIT_SUCCESS);
 }
